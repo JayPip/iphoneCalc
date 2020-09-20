@@ -59,9 +59,10 @@ else if (document.querySelector(".result2").innerHTML[0] === "-") document.query
 
 
 for(var i=0; i< document.querySelectorAll(".org").length ; i++){
-document.querySelectorAll(".org")[i].addEventListener("click", function() {
+document.querySelectorAll(".org")[i].addEventListener("click", function(event) {
 
-document.querySelector(".result1").innerHTML = document.querySelector(".result2").innerHTML;
+document.querySelector(".result1").innerHTML = document.querySelector(".result2").innerHTML + " " + this.innerHTML ;
+document.querySelector(".result2").innerHTML = null;
 
 
 });
