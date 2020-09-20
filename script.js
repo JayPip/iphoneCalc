@@ -69,3 +69,32 @@ document.querySelector(".result2").innerHTML = null;
 
 
  }
+document.querySelector(".res").addEventListener("click", function() {
+var size = document.querySelector(".result1").innerHTML.length;
+var sign = document.querySelector(".result1").innerHTML.slice((size-1), size);
+
+var number1 = parseInt(document.querySelector(".result1").innerHTML.slice(0,(size-2)));
+var number2 = parseInt(document.querySelector(".result2").innerHTML);
+
+switch(sign){
+
+case '÷':
+document.querySelector(".result2").innerHTML = number1 /number2 ;
+break;
+
+case '*':
+document.querySelector(".result2").innerHTML = number1 *number2 ;
+break;
+
+case '+':
+document.querySelector(".result2").innerHTML = number1 +number2 ;
+break;
+
+case '-':
+document.querySelector(".result2").innerHTML = number1 -number2 ;
+break;
+
+
+}
+document.querySelector(".result1").innerHTML = null;
+})

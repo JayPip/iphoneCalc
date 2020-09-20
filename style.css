@@ -71,9 +71,11 @@ grid-row: 4;
 }
 
 .res {
-  background-color: #505050;
+  background-color: #FF9500;
   grid-column: 4;
   grid-row: 3;
+
+  
 }
 
 .div {
